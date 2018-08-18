@@ -1,5 +1,7 @@
 package test;
 
+
+
 import java.util.List;
 
 import org.junit.Test;
@@ -7,6 +9,7 @@ import org.junit.Test;
 import cn.itcast.Service.UserService;
 import cn.itcast.domain.Category;
 import cn.itcast.domain.Product;
+
 
 public class demo {
 	UserService service=new UserService();
