@@ -5,6 +5,7 @@ import java.util.List;
 import org.junit.Test;
 
 import cn.itcast.Service.UserService;
+import cn.itcast.domain.Category;
 import cn.itcast.domain.Product;
 
 public class demo {
@@ -16,7 +17,10 @@ public class demo {
 	}
 	@Test
 	public void getOne() {
-		List<Product> list = service.getAllproduct();
+
+
+		List<Category> list = service.getCategory();
+
 		System.out.println(list);
 	}
 }
