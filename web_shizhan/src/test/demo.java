@@ -26,4 +26,9 @@ public class demo {
 		List<Category> list = service.getCategory();
 		System.out.println(list);
 	}
+	@Test
+	public void getOne2() {
+		List<Category> list = service.getCategory();
+		System.out.println("实战");
+	}
 }
