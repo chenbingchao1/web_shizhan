@@ -19,6 +19,7 @@ public class demo {
 	public void getOne() {
 		List<Category> list = service.getCategory();
 		System.out.println(list);
+		System.out.println(list);
 	}
 	@Test
 	public void getOne1() {
