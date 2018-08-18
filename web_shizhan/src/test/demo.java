@@ -20,4 +20,9 @@ public class demo {
 		List<Category> list = service.getCategory();
 		System.out.println(list);
 	}
+	@Test
+	public void getOne1() {
+		List<Category> list = service.getCategory();
+		System.out.println(list);
+	}
 }
