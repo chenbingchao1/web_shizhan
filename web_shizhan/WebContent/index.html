@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>web_项目后台</title>
+<link rel="stylesheet" type="text/css" href="css/easyui.css">
+	<link rel="stylesheet" type="text/css" href="css/icon.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+	<script type="text/javascript">
+	function findAllcategorys(){
+		
+		 var isExists = $("#ttt").tabs('exists','所有分类信息');
+		 alert(1)
+		/* if(isexist){
+			$("#tt").tabs('getTab',"所有分类信息");
+		}else{
+			$("#tt").tabs('add',{
+				title:'所有分类信息',
+				selected:true,
+				closable:true
+			})
+		} */
+	}
+	</script>
+</head>
+<body>
+	 <div id="cc" class="easyui-layout" style="width:600px;height:400px;" data-options="fit:true">   
+	    <div data-options="region:'north',title:'North Title',split:true" style="height:100px;"></div>   
+	    <div data-options="region:'south',title:'South Title',split:true" style="height:100px;"></div>   
+	    <div data-options="region:'east',iconCls:'icon-reload',title:'East',split:true" style="width:100px;"></div>   
+	    <div data-options="region:'west',title:'West',split:true" style="width:100px;">
+		    <div id="aa" class="easyui-accordion" style="width:300px;height:200px;" data-options="fit:true">   
+				    <div title="Title1" data-options="iconCls:'icon-save'" style="overflow:auto;padding:10px;">   
+				        <h3 style="color:#0099FF;">Accordion for jQuery</h3>   
+				        <p>Accordion is a part of easyui framework for jQuery.     
+				        It lets you define your accordion component on web page more easily.</p>   
+				    </div>   
+				    <div title="商城" data-options="iconCls:'icon-reload',selected:true" style="padding:10px;">   
+						 <ul id="ttt" class="easyui-tree">   
+						    <li>   
+						        <span>后台管理系统</span>   
+						        <ul>   
+						            <li>   
+						                <span>分类管理</span>   
+						                <ul>   
+						                    <li>   
+						                        <span><a href="javascript:void(0);" onclick="findAllcategorys()">查看分类</a></span>   
+						                    </li>   
+						                    <li>   
+						                        <span>File 12</span>   
+						                    </li>   
+						                    <li>   
+						                        <span>File 13</span>   
+						                    </li>   
+						                </ul>   
+						            </li>   
+						           
+						        </ul>   
+						        <ul>   
+						            <li>   
+						                <span>Sub Folder 1</span>   
+						                <ul>   
+						                    <li>   
+						                        <span><a href="#">File 11</a></span>   
+						                    </li>   
+						                    <li>   
+						                        <span>File 12</span>   
+						                    </li>   
+						                    <li>   
+						                        <span>File 13</span>   
+						                    </li>   
+						                </ul>   
+						            </li>   
+						           
+						        </ul>   
+						    </li>     
+						</ul>  
+				    </div>   
+				    <div title="Title3">   
+				        content3    
+				    </div>   
+		   </div>  
+	    </div>   
+	    <div data-options="region:'center',title:'center title'" style="padding:5px;background:#eee; ">
+			<!--center  -->
+			 <div id="tt" class="easyui-tabs" style="width:500px;height:250px;border: 0  " data-options="fit:true">   
+				    <div title="欢迎页" style="padding:20px;display:none;" data-options="fit:true">   
+				        <h1 style="color:red"></h1>   
+				    </div>   
+				     
+			</div> 
+			 
+	    </div>   
+	
+	</div>   
+</body>
+</html>
