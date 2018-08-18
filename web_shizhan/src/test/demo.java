@@ -14,4 +14,9 @@ public class demo {
 		List<Product> list = service.getAllproduct();
 		System.out.println(list);
 	}
+	@Test
+	public void getOne() {
+		List<Product> list = service.getAllproduct();
+		System.out.println(list);
+	}
 }
