@@ -17,10 +17,8 @@ public class demo {
 	}
 	@Test
 	public void getOne() {
-
-
 		List<Category> list = service.getCategory();
-
+		System.out.println(list);
 		System.out.println(list);
 	}
 }
